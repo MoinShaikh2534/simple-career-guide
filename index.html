@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepAhead a Career Guidance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">StepAhead</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#assessment">Assessment</a></li>
+                <li><a href="#mentorship">Mentorship</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Added Image Here -->
+    <!-- Using a Local Image -->
+<img src="brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="StepAhead" class="header-image">
+
+<div class="StepAhead">
+    <h1>StepAhead: A Modern Career Guidance Platform</h1>
+    <p>Unlock your potential by helping you find the right career path.</p>
+</div>
+
+<script>
+    // Scroll effect for navbar
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled'); // Add class to reduce padding
+        } else {
+            navbar.classList.remove('scrolled'); // Remove class on scroll up
+        }
+    });
+</script>
+
+
+
+        <!-- Career Explorer Section -->
+        <section id="home" class="career-explorer">
+            
+            <h2>Explore Careers</h2>
+       
+            <div class="career-grid">
+                <!-- Career cards here -->
+            </div>
+        </section>
+        
+                
+        <!-- Assessment Section -->
+        <section id="assessment" class="assessment-tool">
+            <h2>Career Assessment</h2>
+            <div class="assessment-card">
+                <h3>What interests you most?</h3>
+                <div class="options">
+                    <button>Technology and Coding</button>
+                    <button>Health and Medicine</button>
+                    <button>Business and Entrepreneurship</button>
+                    <button>Art and Creativity</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentorship Section -->
+        <section id="mentorship" class="mentorship">
+            <h2>Mentorship Program</h2>
+            <div class="mentorship-grid">
+                <div class="mentorship-card">
+                    <h3>Find a Mentor</h3>
+                    <p>Connect with experienced professionals who can guide you in your career journey.</p>
+                    <button class="btn btn-primary">Browse Mentors</button>
+                </div>
+                <div class="mentorship-card">
+                    <h3>Become a Mentor</h3>
+                    <p>Share your experience and help students make informed career decisions.</p>
+                    <button class="btn btn-secondary">Apply as Mentor</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script type="module" src="main.js" defer></script>
+</body>
+</html>
