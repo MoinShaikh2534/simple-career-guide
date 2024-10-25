@@ -246,12 +246,6 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-end; /* Align items to the right */
-        width: 100%; /* Full width for the container */
-        padding-right: 0; /* Remove right padding */
-    }
     .nav-links {
         flex-direction: column; /* Stack links vertically */
         gap: 10px; /* Space between links */
