@@ -142,7 +142,7 @@ body {
 .nav-container {
     display: flex;
     justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Center align items */
+    align-items: left; /* Center align items */
 }
 
 /* Responsive Styles */
@@ -152,7 +152,7 @@ body {
         flex-direction: column; /* Stack elements vertically */
         align-items: flex-start; /* Align all items to the left */
         width: 100%; /* Full width to align leftmost */
-        padding-right: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
     }
 
     .navbar {
