@@ -145,6 +145,18 @@ body {
     align-items: center; /* Center align items */
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
 /* Logo Styles */
 .logo {
     font-size: 100px; /* Increased logo font size */
