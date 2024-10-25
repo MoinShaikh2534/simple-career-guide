@@ -143,12 +143,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap;
 }
 
 /* Logo Styles */
 .logo {
-    font-size: 80px; /* Smaller initial logo font size */
+    font-size: 80px;
     color: transparent;
     background: linear-gradient(45deg, #FFD700, #FF4500);
     -webkit-background-clip: text;
@@ -174,7 +174,7 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
-    flex-wrap: wrap; /* Wrap links on small screens */
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -219,25 +219,27 @@ body {
     }
 
     .logo {
-        font-size: 60px; /* Adjust logo size for medium screens */
+        font-size: 60px;
+        align-self: flex-start; /* Position logo on the left side */
+        margin-bottom: 10px; /* Add some space below the logo */
     }
 
     .nav-links {
         flex-direction: column;
         gap: 10px;
-        width: 100%; /* Full width on smaller screens */
-        align-items: flex-start; /* Align links to start */
+        width: 100%;
+        align-items: flex-start;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 50px; /* Smaller logo on extra small screens */
+        font-size: 50px;
     }
 
     .nav-links a {
-        font-size: 0.9rem; /* Smaller font size for links */
-        padding: 5px 0; /* Adjust padding */
+        font-size: 0.9rem;
+        padding: 5px 0;
     }
 }
 
@@ -248,7 +250,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header image styles */
 .header-image {
     width: 100%;
     height: auto;
@@ -256,17 +257,15 @@ body {
     margin: 30px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1000px; /* Reduced max width for larger screens */
+    max-width: 1000px;
 }
 
-/* Title styling */
 .StepAhead h1 {
     font-size: 2rem;
     color: #333;
     margin-top: 5px;
 }
 
-/* Paragraph styling */
 .StepAhead p {
     font-size: 1rem;
     color: #666;
@@ -290,7 +289,7 @@ body {
 
 @media (max-width: 480px) {
     .StepAhead h1 {
-        font-size: 1.5rem; /* Smaller title size for small screens */
+        font-size: 1.5rem;
     }
 
     .StepAhead p {
