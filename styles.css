@@ -150,12 +150,15 @@ body {
     .nav-container {
         flex-direction: column; /* Stack logo and links vertically */
         align-items: flex-start; /* Align items to the left */
+        width: 100%; /* Full width to align leftmost */
+        padding-left: 0; /* Remove left padding */
     }
 
     .navbar {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px 10px; /* Adjust padding for smaller screens */
     }
 }
+
 
 /* Logo Styles */
 .logo {
@@ -245,6 +248,8 @@ body {
     .nav-links {
         flex-direction: column; /* Stack links vertically */
         gap: 10px; /* Space between links */
+        align-self: flex-end; /* Align links to the right side */
+        width: auto; /* Let links take only as much space as they need */
     }
 }
 
