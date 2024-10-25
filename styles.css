@@ -142,28 +142,29 @@ body {
 .nav-container {
     display: flex;
     justify-content: space-between; /* Space between logo and links */
-    align-items: left; /* Center align items */
+    align-items: center; /* Center align items */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    @media (max-width: 768px) {
     .nav-container {
         flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align all items to the left */
-        width: 100%; /* Full width to align leftmost */
+        align-items: flex-end; /* Align items to the right */
+        width: 100%; /* Full width for the container */
         padding-right: 0; /* Remove right padding */
     }
 
-    .navbar {
-        padding: 15px; /* Adjust padding for smaller screens */
+    .logo {
+        align-self: flex-start; /* Align logo to the left */
+        margin-bottom: 10px; /* Optional: add some space below the logo */
     }
 
-    .navbar {
-        padding: 15px 10px; /* Adjust padding for smaller screens */
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Space between links */
+        width: auto; /* Let links take only as much space as they need */
     }
 }
-
 
 /* Logo Styles */
 .logo {
